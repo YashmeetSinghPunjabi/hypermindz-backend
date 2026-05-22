@@ -1,0 +1,551 @@
+order_id,order_date,customer_name,product_category,product_name,revenue,quantity,region,is_mobile
+ORD1001,2025-06-13,Patricia Smith,Clothing,Denim Jacket,46.82,1,North,1
+ORD1002,2025-01-09,James Williams,Home & Kitchen,Coffee Maker,17.79,1,South,1
+ORD1003,2025-02-26,Joseph Jackson,Clothing,Cotton T-Shirt,35.97,2,West,1
+ORD1004,2025-03-13,Robert Miller,Clothing,Cotton T-Shirt,14.84,1,East,1
+ORD1005,2025-01-12,Joseph Moore,Electronics,Charging Dock,65.18,1,East,0
+ORD1006,2025-06-30,John Johnson,Home & Kitchen,Vacuum Cleaner,524.04,5,North,1
+ORD1007,2025-03-13,Joseph Lopez,Home & Kitchen,Vacuum Cleaner,85.37,1,North,0
+ORD1008,2025-05-17,Linda Garcia,Sports & Outdoors,Camping Tent,75.15,1,South,1
+ORD1009,2025-01-15,Linda Johnson,Clothing,Woolen Sweater,20.55,1,East,0
+ORD1010,2025-06-17,Jessica Gonzalez,Sports & Outdoors,Water Bottle,31.03,1,East,1
+ORD1011,2025-05-30,Richard Lopez,Home & Kitchen,Coffee Maker,24.55,1,North,0
+ORD1012,2025-02-09,Jennifer Wilson,Beauty & Personal Care,Face Moisturizer,30.05,1,West,1
+ORD1013,2025-05-22,James Brown,Beauty & Personal Care,Electric Toothbrush,41.17,2,East,1
+ORD1014,2025-02-10,Joseph Smith,Clothing,Baseball Cap,70.77,2,North,1
+ORD1015,2025-06-13,Thomas Martin,Home & Kitchen,Coffee Maker,31.96,1,North,1
+ORD1016,2025-05-06,James Brown,Clothing,Athletic Socks,22.04,1,North,0
+ORD1017,2025-05-05,John Moore,Home & Kitchen,Coffee Maker,228.84,2,South,1
+ORD1018,2025-05-16,Karen Wilson,Home & Kitchen,Silicon SpatulaSet,174.87,2,East,1
+ORD1019,2025-06-21,Barbara Anderson,Beauty & Personal Care,Lip Balm,16.31,1,East,0
+ORD1020,2025-05-31,Sarah Davis,Beauty & Personal Care,Sunscreen SPF 50,34.19,1,North,0
+ORD1021,2025-01-18,Mary Hernandez,Electronics,Laptop Stand,110.28,1,South,0
+ORD1022,2025-05-27,Charles Thomas,Home & Kitchen,Scented Candle,104.98,3,North,1
+ORD1023,2025-04-01,Susan Wilson,Sports & Outdoors,Yoga Mat,157.94,2,North,0
+ORD1024,2025-04-14,David Brown,Home & Kitchen,Coffee Maker,62.1,1,West,0
+ORD1025,2025-03-13,Joseph Davis,Electronics,Charging Dock,398.15,3,North,0
+ORD1026,2025-06-16,Sarah Smith,Electronics,Smart Watch,88.28,1,South,1
+ORD1027,2025-01-16,Jennifer Gonzalez,Electronics,Charging Dock,124.09,1,West,1
+ORD1028,2025-04-19,Sarah Thomas,Home & Kitchen,Coffee Maker,116.71,1,North,1
+ORD1029,2025-01-15,Mary Jackson,Sports & Outdoors,Running Shoes,198.09,4,North,0
+ORD1030,2025-02-17,John Martin,Electronics,Smart Watch,142.99,1,South,0
+ORD1031,2025-06-08,John Wilson,Beauty & Personal Care,Hair Dryer,42.58,1,South,1
+ORD1032,2025-03-03,William Gonzalez,Home & Kitchen,Vacuum Cleaner,112.55,1,North,0
+ORD1033,2025-04-28,Karen Jackson,Electronics,Wireless Headphones,90.71,1,South,1
+ORD1034,2025-01-18,Linda Lopez,Clothing,Denim Jacket,37.16,1,East,0
+ORD1035,2025-06-20,Sarah Martinez,Electronics,Smart Watch,136.77,1,South,1
+ORD1036,2025-03-14,Karen Miller,Clothing,Denim Jacket,105.29,2,West,1
+ORD1037,2025-01-14,John Wilson,Clothing,Cotton T-Shirt,48.56,1,East,0
+ORD1038,2025-04-24,Sarah Wilson,Beauty & Personal Care,Face Moisturizer,42.97,1,South,0
+ORD1039,2025-04-05,Charles Moore,Home & Kitchen,Scented Candle,47.37,1,North,1
+ORD1040,2025-02-23,Linda Brown,Clothing,Baseball Cap,90.96,3,South,0
+ORD1041,2025-02-11,Jennifer Wilson,Electronics,Smart Watch,139.72,2,West,0
+ORD1042,2025-03-10,Jennifer Brown,Sports & Outdoors,Yoga Mat,88.37,3,West,1
+ORD1043,2025-03-20,Linda Davis,Electronics,Smart Watch,63.43,1,North,1
+ORD1044,2025-03-31,Thomas Gonzalez,Beauty & Personal Care,Electric Toothbrush,49.07,4,East,0
+ORD1045,2025-05-29,William Johnson,Electronics,Laptop Stand,117.43,1,East,1
+ORD1046,2025-06-05,Thomas Brown,Sports & Outdoors,Running Shoes,17.89,1,West,0
+ORD1047,2025-05-14,Sarah Miller,Clothing,Woolen Sweater,43.21,1,East,1
+ORD1048,2025-06-19,Patricia Martinez,Beauty & Personal Care,Electric Toothbrush,40.14,2,East,0
+ORD1049,2025-02-19,Susan Gonzalez,Home & Kitchen,Silicon SpatulaSet,57.64,1,North,1
+ORD1050,2025-03-15,Michael Wilson,Beauty & Personal Care,Hair Dryer,50.41,2,West,0
+ORD1051,2025-05-11,Jessica Garcia,Electronics,Bluetooth Speaker,105.95,1,East,0
+ORD1052,2025-03-02,Elizabeth Davis,Home & Kitchen,Coffee Maker,40.71,1,West,0
+ORD1053,2025-04-27,Susan Jackson,Home & Kitchen,Scented Candle,40.62,1,North,0
+ORD1054,2025-04-19,Linda Garcia,Beauty & Personal Care,Lip Balm,17.22,1,North,1
+ORD1055,2025-02-04,Joseph Taylor,Beauty & Personal Care,Hair Dryer,35.94,1,West,1
+ORD1056,2025-05-21,Joseph Garcia,Sports & Outdoors,Camping Tent,31.07,1,East,1
+ORD1057,2025-06-10,Linda Rodriguez,Sports & Outdoors,Yoga Mat,60.48,2,East,1
+ORD1058,2025-05-19,John Jones,Home & Kitchen,Coffee Maker,31.04,1,South,0
+ORD1059,2025-04-17,Susan Hernandez,Beauty & Personal Care,Lip Balm,15.65,1,West,1
+ORD1060,2025-05-30,James Jackson,Sports & Outdoors,Camping Tent,37.86,1,West,1
+ORD1061,2025-05-18,Sarah Martin,Home & Kitchen,Scented Candle,60.76,1,North,1
+ORD1062,2025-03-28,Richard Garcia,Sports & Outdoors,Water Bottle,248.59,5,West,0
+ORD1063,2025-01-22,Susan Jones,Sports & Outdoors,Water Bottle,39.64,1,South,1
+ORD1064,2025-03-25,David Gonzalez,Clothing,Woolen Sweater,14.1,1,North,0
+ORD1065,2025-03-31,Linda Williams,Electronics,Wireless Headphones,215.69,4,North,0
+ORD1066,2025-03-03,Robert Thomas,Electronics,Laptop Stand,343.22,4,East,1
+ORD1067,2025-02-12,Karen Martin,Electronics,Smart Watch,171.89,4,North,1
+ORD1068,2025-05-28,Richard Gonzalez,Home & Kitchen,Air Fryer,102.21,1,South,0
+ORD1069,2025-06-28,Elizabeth Martin,Electronics,Laptop Stand,143.33,2,West,1
+ORD1070,2025-01-18,Thomas Hernandez,Electronics,Charging Dock,127.99,3,East,1
+ORD1071,2025-02-09,Susan Garcia,Beauty & Personal Care,Electric Toothbrush,84.05,2,West,1
+ORD1072,2025-04-22,Charles Rodriguez,Clothing,Denim Jacket,43.0,3,West,0
+ORD1073,2025-04-29,Charles Martin,Sports & Outdoors,Dumbbells (Pair),70.31,1,South,1
+ORD1074,2025-02-24,Barbara Rodriguez,Clothing,Athletic Socks,135.18,3,East,0
+ORD1075,2025-05-13,Michael Williams,Home & Kitchen,Scented Candle,94.61,1,West,1
+ORD1076,2025-04-25,James Williams,Clothing,Denim Jacket,22.17,1,East,1
+ORD1077,2025-05-22,Thomas Lopez,Sports & Outdoors,Running Shoes,60.69,1,East,1
+ORD1078,2025-03-06,Linda Brown,Home & Kitchen,Vacuum Cleaner,71.27,1,South,0
+ORD1079,2025-02-25,Jessica Rodriguez,Beauty & Personal Care,Hair Dryer,44.28,1,South,1
+ORD1080,2025-02-28,Barbara Garcia,Clothing,Cotton T-Shirt,32.66,2,North,0
+ORD1081,2025-05-22,Elizabeth Jones,Sports & Outdoors,Yoga Mat,156.94,3,West,1
+ORD1082,2025-04-23,David Garcia,Electronics,Bluetooth Speaker,349.31,4,North,1
+ORD1083,2025-05-06,John Jackson,Electronics,Smart Watch,97.54,1,East,0
+ORD1084,2025-03-05,Patricia Moore,Sports & Outdoors,Running Shoes,55.2,1,West,1
+ORD1085,2025-04-24,Elizabeth Jackson,Sports & Outdoors,Dumbbells (Pair),18.91,1,North,0
+ORD1086,2025-06-10,Michael Rodriguez,Electronics,Smart Watch,96.24,1,South,0
+ORD1087,2025-04-15,Joseph Martin,Sports & Outdoors,Dumbbells (Pair),33.73,1,East,1
+ORD1088,2025-01-19,Linda Rodriguez,Beauty & Personal Care,Sunscreen SPF 50,28.15,1,South,1
+ORD1089,2025-02-06,John Johnson,Home & Kitchen,Vacuum Cleaner,101.55,1,East,1
+ORD1090,2025-02-01,Joseph Martinez,Sports & Outdoors,Dumbbells (Pair),47.1,1,North,0
+ORD1091,2025-04-21,David Martin,Clothing,Cotton T-Shirt,58.1,1,North,1
+ORD1092,2025-05-28,Mary Garcia,Sports & Outdoors,Running Shoes,149.09,2,South,1
+ORD1093,2025-06-12,Jessica Williams,Sports & Outdoors,Dumbbells (Pair),35.87,1,North,0
+ORD1094,2025-03-26,Susan Thomas,Clothing,Woolen Sweater,112.51,3,West,0
+ORD1095,2025-03-22,William Hernandez,Electronics,Charging Dock,386.97,3,North,1
+ORD1096,2025-04-16,Mary Miller,Beauty & Personal Care,Electric Toothbrush,52.89,2,West,0
+ORD1097,2025-02-22,William Moore,Home & Kitchen,Vacuum Cleaner,88.32,1,North,0
+ORD1098,2025-06-11,Karen Davis,Home & Kitchen,Vacuum Cleaner,72.99,1,North,0
+ORD1099,2025-01-30,Joseph Brown,Home & Kitchen,Scented Candle,182.58,4,East,1
+ORD1100,2025-05-04,Jessica Davis,Sports & Outdoors,Running Shoes,27.39,1,South,0
+ORD1101,2025-03-12,Susan Hernandez,Beauty & Personal Care,Electric Toothbrush,55.4,3,East,1
+ORD1102,2025-02-08,Joseph Moore,Sports & Outdoors,Dumbbells (Pair),64.59,1,West,1
+ORD1103,2025-03-24,Michael Davis,Beauty & Personal Care,Lip Balm,36.7,1,North,1
+ORD1104,2025-05-02,Richard Gonzalez,Home & Kitchen,Scented Candle,113.02,4,East,0
+ORD1105,2025-04-23,Patricia Taylor,Sports & Outdoors,Yoga Mat,83.3,2,South,0
+ORD1106,2025-05-01,William Hernandez,Beauty & Personal Care,Lip Balm,79.03,2,West,1
+ORD1107,2025-06-10,Jessica Moore,Electronics,Laptop Stand,105.74,1,East,0
+ORD1108,2025-01-24,Susan Brown,Electronics,Charging Dock,65.94,1,North,0
+ORD1109,2025-03-25,Mary Martinez,Clothing,Athletic Socks,22.21,1,West,0
+ORD1110,2025-02-13,Jennifer Williams,Beauty & Personal Care,Lip Balm,33.82,2,South,0
+ORD1111,2025-04-29,William Anderson,Clothing,Cotton T-Shirt,99.79,3,East,0
+ORD1112,2025-01-19,Joseph Lopez,Beauty & Personal Care,Electric Toothbrush,47.4,2,East,1
+ORD1113,2025-03-19,Michael Gonzalez,Sports & Outdoors,Yoga Mat,52.17,1,East,1
+ORD1114,2025-01-06,Richard Rodriguez,Electronics,Laptop Stand,370.19,3,North,1
+ORD1115,2025-03-15,Linda Martin,Clothing,Denim Jacket,82.09,2,South,0
+ORD1116,2025-06-10,Mary Martinez,Sports & Outdoors,Yoga Mat,62.6,1,North,1
+ORD1117,2025-03-25,Susan Garcia,Home & Kitchen,Coffee Maker,214.06,2,East,1
+ORD1118,2025-02-12,William Thomas,Clothing,Athletic Socks,100.25,3,North,0
+ORD1119,2025-02-27,Richard Moore,Clothing,Cotton T-Shirt,21.39,2,North,1
+ORD1120,2025-04-05,William Jackson,Sports & Outdoors,Dumbbells (Pair),30.2,1,North,1
+ORD1121,2025-06-06,Linda Williams,Sports & Outdoors,Dumbbells (Pair),45.17,2,North,0
+ORD1122,2025-03-19,Jessica Brown,Electronics,Smart Watch,138.84,3,West,1
+ORD1123,2025-06-21,Sarah Wilson,Beauty & Personal Care,Sunscreen SPF 50,96.7,3,West,1
+ORD1124,2025-03-13,Mary Lopez,Home & Kitchen,Scented Candle,39.79,1,East,0
+ORD1125,2025-06-25,Barbara Moore,Clothing,Cotton T-Shirt,19.49,1,North,1
+ORD1126,2025-01-24,Michael Martin,Electronics,Wireless Headphones,118.46,2,South,0
+ORD1127,2025-01-18,Sarah Miller,Beauty & Personal Care,Sunscreen SPF 50,49.86,3,South,0
+ORD1128,2025-03-12,Robert Jones,Beauty & Personal Care,Electric Toothbrush,24.13,2,North,0
+ORD1129,2025-01-04,Barbara Davis,Beauty & Personal Care,Electric Toothbrush,17.82,1,South,1
+ORD1130,2025-05-15,Patricia Williams,Sports & Outdoors,Camping Tent,96.72,2,North,1
+ORD1131,2025-05-09,Linda Martin,Electronics,Laptop Stand,107.2,1,North,0
+ORD1132,2025-05-03,Richard Wilson,Electronics,Charging Dock,166.45,2,North,1
+ORD1133,2025-06-05,Robert Williams,Home & Kitchen,Vacuum Cleaner,152.93,2,East,1
+ORD1134,2025-06-02,Thomas Martinez,Sports & Outdoors,Running Shoes,42.89,2,North,0
+ORD1135,2025-04-21,Joseph Davis,Sports & Outdoors,Dumbbells (Pair),122.75,3,North,1
+ORD1136,2025-04-20,David Rodriguez,Clothing,Denim Jacket,67.43,2,North,0
+ORD1137,2025-01-24,Susan Brown,Clothing,Denim Jacket,39.32,1,East,0
+ORD1138,2025-04-16,Barbara Wilson,Electronics,Bluetooth Speaker,144.4,2,South,0
+ORD1139,2025-06-18,Jessica Davis,Electronics,Bluetooth Speaker,222.32,3,East,0
+ORD1140,2025-04-20,Sarah Martin,Beauty & Personal Care,Hair Dryer,42.38,1,East,0
+ORD1141,2025-02-16,William Martinez,Clothing,Athletic Socks,53.49,1,West,0
+ORD1142,2025-02-06,James Williams,Beauty & Personal Care,Sunscreen SPF 50,24.78,1,South,1
+ORD1143,2025-03-21,David Jackson,Beauty & Personal Care,Face Moisturizer,41.27,3,North,0
+ORD1144,2025-03-11,Joseph Wilson,Sports & Outdoors,Running Shoes,32.76,1,North,1
+ORD1145,2025-04-21,Patricia Martinez,Beauty & Personal Care,Lip Balm,19.41,1,South,1
+ORD1146,2025-06-03,Mary Smith,Home & Kitchen,Vacuum Cleaner,382.29,4,East,1
+ORD1147,2025-03-25,Patricia Smith,Sports & Outdoors,Camping Tent,39.71,1,South,1
+ORD1148,2025-01-19,Richard Johnson,Sports & Outdoors,Yoga Mat,20.06,1,East,1
+ORD1149,2025-05-27,Richard Wilson,Clothing,Cotton T-Shirt,58.31,1,South,1
+ORD1150,2025-06-26,Barbara Williams,Sports & Outdoors,Yoga Mat,53.28,1,North,1
+ORD1151,2025-03-21,David Davis,Clothing,Denim Jacket,41.66,1,South,1
+ORD1152,2025-03-31,Robert Davis,Electronics,Smart Watch,50.82,1,South,0
+ORD1153,2025-02-15,Jessica Anderson,Beauty & Personal Care,Hair Dryer,42.19,1,East,1
+ORD1154,2025-02-08,Joseph Williams,Sports & Outdoors,Camping Tent,133.52,2,North,1
+ORD1155,2025-05-10,John Martinez,Sports & Outdoors,Camping Tent,38.97,1,East,0
+ORD1156,2025-06-15,John Martin,Beauty & Personal Care,Hair Dryer,29.47,1,North,1
+ORD1157,2025-05-27,Michael Hernandez,Beauty & Personal Care,Lip Balm,43.44,1,West,0
+ORD1158,2025-03-29,John Taylor,Home & Kitchen,Air Fryer,60.96,1,West,0
+ORD1159,2025-04-04,Barbara Martinez,Sports & Outdoors,Camping Tent,118.26,2,North,1
+ORD1160,2025-01-17,David Brown,Beauty & Personal Care,Lip Balm,34.78,1,South,1
+ORD1161,2025-01-21,Charles Jones,Clothing,Athletic Socks,179.7,4,West,0
+ORD1162,2025-06-02,John Martinez,Beauty & Personal Care,Lip Balm,40.31,2,South,0
+ORD1163,2025-06-15,Susan Taylor,Clothing,Cotton T-Shirt,19.01,1,South,1
+ORD1164,2025-05-05,Michael Davis,Home & Kitchen,Coffee Maker,103.66,1,North,0
+ORD1165,2025-06-19,David Martin,Home & Kitchen,Silicon SpatulaSet,32.04,1,South,1
+ORD1166,2025-01-12,Susan Lopez,Home & Kitchen,Scented Candle,188.0,2,West,0
+ORD1167,2025-05-17,Linda Martinez,Sports & Outdoors,Water Bottle,76.56,1,West,1
+ORD1168,2025-03-14,Richard Taylor,Beauty & Personal Care,Lip Balm,152.9,4,South,1
+ORD1169,2025-01-14,Jessica Lopez,Beauty & Personal Care,Face Moisturizer,54.18,2,North,1
+ORD1170,2025-01-22,Jennifer Rodriguez,Sports & Outdoors,Running Shoes,43.44,1,South,1
+ORD1171,2025-03-31,James Wilson,Electronics,Charging Dock,58.29,1,North,1
+ORD1172,2025-02-27,James Hernandez,Electronics,Bluetooth Speaker,93.02,2,East,1
+ORD1173,2025-06-28,Robert Thomas,Sports & Outdoors,Running Shoes,20.15,1,East,0
+ORD1174,2025-02-08,Sarah Martin,Beauty & Personal Care,Lip Balm,18.66,1,East,0
+ORD1175,2025-01-13,Linda Wilson,Beauty & Personal Care,Lip Balm,38.96,1,West,0
+ORD1176,2025-06-11,Thomas Jackson,Home & Kitchen,Coffee Maker,15.16,1,East,0
+ORD1177,2025-05-27,Susan Garcia,Electronics,Laptop Stand,190.61,5,North,1
+ORD1178,2025-05-01,Mary Gonzalez,Clothing,Athletic Socks,55.71,2,North,1
+ORD1179,2025-03-03,Patricia Jackson,Clothing,Denim Jacket,37.3,1,South,1
+ORD1180,2025-06-28,Jessica Garcia,Home & Kitchen,Air Fryer,228.16,2,North,1
+ORD1181,2025-02-21,Mary Miller,Electronics,Bluetooth Speaker,367.38,4,West,1
+ORD1182,2025-01-10,Michael Martinez,Clothing,Cotton T-Shirt,79.79,3,North,1
+ORD1183,2025-04-22,Richard Anderson,Sports & Outdoors,Dumbbells (Pair),236.27,5,West,1
+ORD1184,2025-05-13,William Williams,Sports & Outdoors,Yoga Mat,79.68,1,South,1
+ORD1185,2025-03-24,Patricia Williams,Clothing,Athletic Socks,40.13,1,West,0
+ORD1186,2025-06-26,Joseph Lopez,Sports & Outdoors,Yoga Mat,148.51,2,West,1
+ORD1187,2025-06-13,Mary Williams,Sports & Outdoors,Dumbbells (Pair),63.74,1,South,0
+ORD1188,2025-02-06,Karen Anderson,Electronics,Smart Watch,123.42,1,East,1
+ORD1189,2025-04-09,Charles Johnson,Beauty & Personal Care,Sunscreen SPF 50,86.21,2,East,1
+ORD1190,2025-01-20,Charles Jones,Beauty & Personal Care,Electric Toothbrush,32.03,1,South,0
+ORD1191,2025-01-07,Jennifer Thomas,Beauty & Personal Care,Lip Balm,49.43,4,East,1
+ORD1192,2025-02-24,Karen Martinez,Sports & Outdoors,Water Bottle,70.43,1,West,0
+ORD1193,2025-04-24,John Hernandez,Clothing,Cotton T-Shirt,24.52,1,East,0
+ORD1194,2025-06-29,Jennifer Lopez,Beauty & Personal Care,Sunscreen SPF 50,15.44,1,South,0
+ORD1195,2025-05-07,James Lopez,Beauty & Personal Care,Hair Dryer,37.74,1,South,0
+ORD1196,2025-01-17,Elizabeth Gonzalez,Sports & Outdoors,Running Shoes,41.61,1,North,0
+ORD1197,2025-03-23,John Anderson,Sports & Outdoors,Running Shoes,72.07,1,South,0
+ORD1198,2025-04-21,Thomas Johnson,Electronics,Laptop Stand,49.76,1,East,0
+ORD1199,2025-03-30,Thomas Martinez,Electronics,Bluetooth Speaker,144.76,1,East,0
+ORD1200,2025-06-10,Elizabeth Martin,Beauty & Personal Care,Face Moisturizer,14.24,1,South,0
+ORD1201,2025-06-18,Karen Martin,Clothing,Baseball Cap,53.19,1,North,0
+ORD1202,2025-06-14,Charles Rodriguez,Home & Kitchen,Silicon SpatulaSet,82.09,1,West,1
+ORD1203,2025-06-14,Elizabeth Thomas,Home & Kitchen,Scented Candle,22.66,1,North,0
+ORD1204,2025-04-23,Susan Thomas,Sports & Outdoors,Water Bottle,24.34,1,East,1
+ORD1205,2025-04-13,Robert Lopez,Beauty & Personal Care,Hair Dryer,16.94,1,North,1
+ORD1206,2025-04-26,Linda Jones,Electronics,Wireless Headphones,76.1,1,West,0
+ORD1207,2025-02-10,David Jackson,Clothing,Denim Jacket,69.83,2,West,1
+ORD1208,2025-03-20,Jessica Smith,Electronics,Charging Dock,146.0,1,South,1
+ORD1209,2025-01-13,Mary Martinez,Sports & Outdoors,Running Shoes,172.58,3,West,1
+ORD1210,2025-05-18,James Brown,Sports & Outdoors,Water Bottle,186.86,3,West,1
+ORD1211,2025-01-12,Richard Johnson,Beauty & Personal Care,Hair Dryer,28.47,1,North,1
+ORD1212,2025-05-10,Joseph Moore,Clothing,Baseball Cap,31.88,2,North,1
+ORD1213,2025-04-06,David Moore,Clothing,Denim Jacket,35.46,1,North,0
+ORD1214,2025-01-10,Robert Hernandez,Sports & Outdoors,Running Shoes,54.41,1,South,1
+ORD1215,2025-06-06,David Garcia,Sports & Outdoors,Running Shoes,68.9,2,East,1
+ORD1216,2025-05-25,Elizabeth Thomas,Electronics,Bluetooth Speaker,43.15,1,West,1
+ORD1217,2025-06-26,James Martin,Sports & Outdoors,Dumbbells (Pair),263.56,4,South,0
+ORD1218,2025-05-30,Jessica Garcia,Beauty & Personal Care,Hair Dryer,44.13,2,South,0
+ORD1219,2025-05-27,Patricia Miller,Electronics,Charging Dock,48.17,1,South,1
+ORD1220,2025-05-09,Karen Thomas,Electronics,Smart Watch,97.31,1,West,1
+ORD1221,2025-03-22,Jennifer Anderson,Beauty & Personal Care,Electric Toothbrush,33.01,1,East,1
+ORD1222,2025-02-19,Linda Rodriguez,Beauty & Personal Care,Electric Toothbrush,44.0,1,East,1
+ORD1223,2025-06-30,Michael Thomas,Clothing,Woolen Sweater,56.69,1,East,1
+ORD1224,2025-02-01,Charles Moore,Sports & Outdoors,Camping Tent,231.15,3,South,1
+ORD1225,2025-01-11,Elizabeth Williams,Clothing,Woolen Sweater,94.73,2,South,0
+ORD1226,2025-05-18,William Moore,Clothing,Denim Jacket,47.04,1,South,0
+ORD1227,2025-01-13,Thomas Davis,Home & Kitchen,Air Fryer,49.68,1,West,0
+ORD1228,2025-06-24,Robert Smith,Beauty & Personal Care,Sunscreen SPF 50,42.6,1,West,1
+ORD1229,2025-06-16,Michael Martinez,Clothing,Athletic Socks,110.79,2,North,0
+ORD1230,2025-05-17,Mary Garcia,Sports & Outdoors,Water Bottle,69.45,4,West,1
+ORD1231,2025-02-17,Elizabeth Johnson,Electronics,Bluetooth Speaker,42.88,1,East,1
+ORD1232,2025-04-27,Sarah Taylor,Sports & Outdoors,Water Bottle,136.26,3,South,0
+ORD1233,2025-03-26,Jennifer Anderson,Clothing,Denim Jacket,26.86,1,East,0
+ORD1234,2025-02-14,Karen Gonzalez,Sports & Outdoors,Running Shoes,41.05,1,North,0
+ORD1235,2025-02-05,Jessica Hernandez,Home & Kitchen,Air Fryer,39.73,1,East,1
+ORD1236,2025-03-19,Charles Jackson,Electronics,Bluetooth Speaker,226.26,2,North,0
+ORD1237,2025-04-30,Elizabeth Garcia,Sports & Outdoors,Running Shoes,290.83,4,East,0
+ORD1238,2025-06-13,Elizabeth Lopez,Beauty & Personal Care,Sunscreen SPF 50,12.94,1,South,1
+ORD1239,2025-06-05,Barbara Wilson,Beauty & Personal Care,Lip Balm,75.35,2,South,0
+ORD1240,2025-06-24,Karen Williams,Beauty & Personal Care,Lip Balm,21.39,1,North,0
+ORD1241,2025-05-21,Thomas Miller,Beauty & Personal Care,Hair Dryer,20.14,1,West,0
+ORD1242,2025-06-24,Michael Jackson,Sports & Outdoors,Yoga Mat,131.87,3,North,1
+ORD1243,2025-02-03,Thomas Wilson,Sports & Outdoors,Running Shoes,45.05,1,East,0
+ORD1244,2025-04-12,William Smith,Home & Kitchen,Silicon SpatulaSet,59.49,1,North,0
+ORD1245,2025-01-18,Jessica Johnson,Clothing,Woolen Sweater,16.77,1,West,1
+ORD1246,2025-04-08,Joseph Gonzalez,Sports & Outdoors,Yoga Mat,116.03,2,South,1
+ORD1247,2025-01-31,Jennifer Moore,Sports & Outdoors,Running Shoes,78.62,1,North,0
+ORD1248,2025-03-18,Joseph Moore,Sports & Outdoors,Running Shoes,29.93,1,West,1
+ORD1249,2025-02-09,William Miller,Electronics,Wireless Headphones,240.93,3,North,0
+ORD1250,2025-02-22,John Brown,Beauty & Personal Care,Face Moisturizer,32.86,1,North,0
+ORD1251,2025-01-12,Richard Anderson,Home & Kitchen,Silicon SpatulaSet,105.69,1,North,0
+ORD1252,2025-05-09,Elizabeth Davis,Beauty & Personal Care,Electric Toothbrush,36.58,1,East,0
+ORD1253,2025-03-19,Robert Taylor,Home & Kitchen,Scented Candle,21.4,1,South,1
+ORD1254,2025-05-23,Jessica Johnson,Clothing,Woolen Sweater,51.87,2,West,1
+ORD1255,2025-02-08,Elizabeth Gonzalez,Home & Kitchen,Silicon SpatulaSet,104.18,1,East,0
+ORD1256,2025-04-29,Mary Moore,Sports & Outdoors,Camping Tent,23.72,1,South,1
+ORD1257,2025-02-22,David Williams,Sports & Outdoors,Dumbbells (Pair),62.1,1,South,0
+ORD1258,2025-03-10,Richard Martin,Beauty & Personal Care,Face Moisturizer,44.89,3,South,1
+ORD1259,2025-02-23,David Martinez,Electronics,Smart Watch,581.8,4,North,1
+ORD1260,2025-03-04,Karen Miller,Sports & Outdoors,Water Bottle,65.41,1,West,1
+ORD1261,2025-05-17,Barbara Martinez,Clothing,Athletic Socks,34.86,1,North,1
+ORD1262,2025-03-23,Michael Lopez,Clothing,Woolen Sweater,53.2,1,South,0
+ORD1263,2025-03-08,Sarah Jackson,Beauty & Personal Care,Lip Balm,15.26,1,South,1
+ORD1264,2025-05-26,Linda Thomas,Beauty & Personal Care,Electric Toothbrush,38.4,1,West,1
+ORD1265,2025-02-13,Barbara Garcia,Home & Kitchen,Silicon SpatulaSet,111.27,1,North,0
+ORD1266,2025-01-20,Mary Smith,Sports & Outdoors,Water Bottle,90.13,3,South,0
+ORD1267,2025-02-25,Thomas Anderson,Clothing,Cotton T-Shirt,86.68,2,West,1
+ORD1268,2025-01-05,James Moore,Beauty & Personal Care,Lip Balm,27.59,1,East,1
+ORD1269,2025-01-05,Thomas Wilson,Home & Kitchen,Air Fryer,280.24,4,South,0
+ORD1270,2025-06-08,Thomas Rodriguez,Clothing,Athletic Socks,27.9,2,West,1
+ORD1271,2025-05-25,Linda Davis,Clothing,Cotton T-Shirt,105.82,2,North,0
+ORD1272,2025-04-14,Richard Gonzalez,Beauty & Personal Care,Lip Balm,8.35,1,South,0
+ORD1273,2025-05-08,Susan Hernandez,Beauty & Personal Care,Face Moisturizer,126.03,3,South,0
+ORD1274,2025-06-27,Charles Thomas,Clothing,Cotton T-Shirt,176.89,4,East,0
+ORD1275,2025-02-15,David Smith,Home & Kitchen,Silicon SpatulaSet,101.17,1,West,0
+ORD1276,2025-03-18,Jennifer Jackson,Home & Kitchen,Silicon SpatulaSet,167.58,3,East,1
+ORD1277,2025-02-05,John Taylor,Clothing,Cotton T-Shirt,21.61,1,North,1
+ORD1278,2025-06-04,Karen Martin,Sports & Outdoors,Dumbbells (Pair),32.77,1,West,1
+ORD1279,2025-02-28,Barbara Moore,Sports & Outdoors,Camping Tent,53.08,1,West,0
+ORD1280,2025-06-08,Elizabeth Davis,Electronics,Wireless Headphones,75.6,1,South,1
+ORD1281,2025-03-23,Barbara Brown,Electronics,Wireless Headphones,333.47,4,East,0
+ORD1282,2025-02-03,John Garcia,Sports & Outdoors,Camping Tent,48.31,1,North,0
+ORD1283,2025-01-23,Barbara Moore,Electronics,Laptop Stand,68.93,1,West,0
+ORD1284,2025-03-16,Susan Gonzalez,Electronics,Laptop Stand,589.52,4,South,1
+ORD1285,2025-02-13,Robert Rodriguez,Clothing,Athletic Socks,13.16,1,West,1
+ORD1286,2025-04-18,Elizabeth Thomas,Electronics,Bluetooth Speaker,59.59,1,West,0
+ORD1287,2025-04-28,Patricia Jones,Clothing,Cotton T-Shirt,106.44,4,West,1
+ORD1288,2025-04-23,David Wilson,Beauty & Personal Care,Sunscreen SPF 50,30.32,1,South,1
+ORD1289,2025-03-22,Jennifer Gonzalez,Clothing,Athletic Socks,83.29,2,South,1
+ORD1290,2025-04-07,William Gonzalez,Clothing,Cotton T-Shirt,79.96,4,South,0
+ORD1291,2025-04-29,Michael Anderson,Clothing,Cotton T-Shirt,149.35,3,West,1
+ORD1292,2025-02-05,Elizabeth Davis,Clothing,Denim Jacket,98.91,2,North,1
+ORD1293,2025-06-03,Jessica Jackson,Sports & Outdoors,Running Shoes,74.83,1,West,0
+ORD1294,2025-04-03,Sarah Martin,Electronics,Wireless Headphones,217.82,2,East,0
+ORD1295,2025-06-15,Karen Johnson,Beauty & Personal Care,Lip Balm,81.08,4,West,0
+ORD1296,2025-01-03,Patricia Rodriguez,Home & Kitchen,Silicon SpatulaSet,147.18,2,South,1
+ORD1297,2025-04-06,Richard Anderson,Beauty & Personal Care,Hair Dryer,44.92,1,West,0
+ORD1298,2025-03-17,Susan Williams,Electronics,Smart Watch,71.17,1,South,1
+ORD1299,2025-03-31,Jessica Brown,Sports & Outdoors,Camping Tent,34.52,1,North,0
+ORD1300,2025-03-29,Patricia Garcia,Home & Kitchen,Silicon SpatulaSet,31.81,1,West,1
+ORD1301,2025-03-01,Richard Garcia,Home & Kitchen,Scented Candle,92.43,1,South,1
+ORD1302,2025-06-01,Susan Gonzalez,Electronics,Smart Watch,120.28,1,North,0
+ORD1303,2025-05-18,Jennifer Lopez,Clothing,Denim Jacket,23.12,1,West,1
+ORD1304,2025-06-02,Richard Martin,Sports & Outdoors,Running Shoes,37.88,1,West,0
+ORD1305,2025-06-22,Elizabeth Martin,Beauty & Personal Care,Face Moisturizer,39.18,2,South,1
+ORD1306,2025-01-30,Jennifer Lopez,Home & Kitchen,Silicon SpatulaSet,77.62,1,West,1
+ORD1307,2025-02-17,Jessica Moore,Home & Kitchen,Silicon SpatulaSet,45.33,1,South,1
+ORD1308,2025-04-26,Karen Johnson,Clothing,Cotton T-Shirt,19.76,1,West,1
+ORD1309,2025-04-15,Jessica Wilson,Sports & Outdoors,Camping Tent,51.75,1,South,1
+ORD1310,2025-01-09,William Davis,Beauty & Personal Care,Electric Toothbrush,24.92,1,West,0
+ORD1311,2025-05-27,Patricia Rodriguez,Beauty & Personal Care,Electric Toothbrush,36.0,1,West,0
+ORD1312,2025-04-19,Patricia Davis,Clothing,Cotton T-Shirt,27.43,1,North,1
+ORD1313,2025-01-31,Linda Miller,Beauty & Personal Care,Electric Toothbrush,91.74,3,West,0
+ORD1314,2025-06-07,Robert Miller,Home & Kitchen,Air Fryer,70.89,1,South,1
+ORD1315,2025-06-30,Elizabeth Martinez,Beauty & Personal Care,Electric Toothbrush,108.13,4,North,0
+ORD1316,2025-04-16,Mary Rodriguez,Home & Kitchen,Coffee Maker,89.7,1,South,1
+ORD1317,2025-05-06,Robert Jackson,Clothing,Woolen Sweater,13.78,1,North,1
+ORD1318,2025-05-12,William Lopez,Sports & Outdoors,Camping Tent,15.16,1,North,1
+ORD1319,2025-06-12,Barbara Williams,Beauty & Personal Care,Lip Balm,23.9,1,South,1
+ORD1320,2025-03-10,David Martinez,Clothing,Baseball Cap,38.31,1,West,1
+ORD1321,2025-06-24,Mary Johnson,Electronics,Charging Dock,141.53,1,South,1
+ORD1322,2025-04-27,James Wilson,Home & Kitchen,Coffee Maker,140.09,3,East,0
+ORD1323,2025-06-17,Barbara Rodriguez,Electronics,Bluetooth Speaker,215.74,2,North,1
+ORD1324,2025-06-10,Elizabeth Davis,Sports & Outdoors,Yoga Mat,30.14,2,West,0
+ORD1325,2025-02-03,Charles Davis,Beauty & Personal Care,Lip Balm,33.74,1,North,1
+ORD1326,2025-06-27,Robert Thomas,Electronics,Smart Watch,117.69,1,North,0
+ORD1327,2025-03-22,Barbara Martinez,Home & Kitchen,Scented Candle,188.16,2,South,0
+ORD1328,2025-01-18,Thomas Jackson,Electronics,Laptop Stand,165.62,2,South,0
+ORD1329,2025-04-16,Karen Anderson,Home & Kitchen,Air Fryer,89.1,3,North,1
+ORD1330,2025-03-31,Susan Hernandez,Home & Kitchen,Coffee Maker,23.85,1,East,0
+ORD1331,2025-06-18,Elizabeth Miller,Beauty & Personal Care,Hair Dryer,35.67,1,East,0
+ORD1332,2025-03-03,Jessica Gonzalez,Electronics,Smart Watch,101.27,1,North,1
+ORD1333,2025-03-23,Robert Gonzalez,Beauty & Personal Care,Lip Balm,33.27,1,West,0
+ORD1334,2025-01-05,Charles Williams,Electronics,Bluetooth Speaker,140.71,1,West,1
+ORD1335,2025-06-10,Thomas Wilson,Sports & Outdoors,Camping Tent,49.88,1,South,1
+ORD1336,2025-01-22,Elizabeth Williams,Beauty & Personal Care,Sunscreen SPF 50,68.74,5,East,1
+ORD1337,2025-05-31,John Martinez,Sports & Outdoors,Water Bottle,20.6,1,West,0
+ORD1338,2025-04-27,Karen Martin,Electronics,Bluetooth Speaker,217.93,2,South,0
+ORD1339,2025-01-04,Robert Smith,Home & Kitchen,Scented Candle,279.66,4,East,0
+ORD1340,2025-04-06,Robert Rodriguez,Electronics,Wireless Headphones,81.52,1,North,1
+ORD1341,2025-05-28,John Thomas,Sports & Outdoors,Running Shoes,47.47,1,South,1
+ORD1342,2025-02-10,William Brown,Beauty & Personal Care,Face Moisturizer,26.83,1,North,0
+ORD1343,2025-03-04,Mary Thomas,Clothing,Woolen Sweater,75.79,4,North,1
+ORD1344,2025-02-27,David Davis,Sports & Outdoors,Dumbbells (Pair),20.06,1,East,0
+ORD1345,2025-05-09,Mary Garcia,Home & Kitchen,Silicon SpatulaSet,575.89,5,North,1
+ORD1346,2025-03-14,Elizabeth Hernandez,Electronics,Laptop Stand,74.27,1,East,1
+ORD1347,2025-06-09,Linda Anderson,Clothing,Baseball Cap,299.45,5,South,0
+ORD1348,2025-02-08,James Wilson,Electronics,Smart Watch,106.31,1,North,1
+ORD1349,2025-01-01,Richard Martinez,Electronics,Smart Watch,58.58,1,West,0
+ORD1350,2025-02-06,William Williams,Electronics,Smart Watch,277.11,3,East,1
+ORD1351,2025-01-22,Charles Brown,Beauty & Personal Care,Sunscreen SPF 50,45.18,2,North,1
+ORD1352,2025-06-19,Robert Davis,Clothing,Athletic Socks,168.91,3,West,1
+ORD1353,2025-03-23,Joseph Rodriguez,Home & Kitchen,Air Fryer,117.17,4,North,0
+ORD1354,2025-01-28,Jennifer Anderson,Sports & Outdoors,Dumbbells (Pair),49.84,1,South,1
+ORD1355,2025-03-20,Joseph Rodriguez,Electronics,Wireless Headphones,112.33,1,North,0
+ORD1356,2025-03-25,Robert Williams,Home & Kitchen,Vacuum Cleaner,20.14,1,East,1
+ORD1357,2025-02-14,James Gonzalez,Sports & Outdoors,Running Shoes,62.48,2,West,0
+ORD1358,2025-02-05,Patricia Smith,Electronics,Smart Watch,128.84,1,East,0
+ORD1359,2025-05-30,Charles Rodriguez,Electronics,Wireless Headphones,268.65,5,West,0
+ORD1360,2025-01-24,David Brown,Electronics,Charging Dock,140.9,1,West,1
+ORD1361,2025-05-08,James Gonzalez,Sports & Outdoors,Water Bottle,74.04,1,East,1
+ORD1362,2025-04-25,Robert Johnson,Beauty & Personal Care,Hair Dryer,63.9,2,West,1
+ORD1363,2025-05-21,Jessica Johnson,Electronics,Bluetooth Speaker,80.31,1,South,0
+ORD1364,2025-04-08,Barbara Thomas,Beauty & Personal Care,Lip Balm,28.93,1,East,1
+ORD1365,2025-03-11,Jennifer Smith,Clothing,Baseball Cap,54.79,1,East,0
+ORD1366,2025-05-01,Thomas Lopez,Beauty & Personal Care,Sunscreen SPF 50,58.52,5,South,1
+ORD1367,2025-05-17,Mary Davis,Beauty & Personal Care,Lip Balm,39.05,1,South,0
+ORD1368,2025-03-02,Charles Hernandez,Clothing,Baseball Cap,45.03,1,South,0
+ORD1369,2025-05-07,Sarah Martinez,Home & Kitchen,Scented Candle,20.9,1,South,0
+ORD1370,2025-05-15,Jessica Smith,Clothing,Baseball Cap,16.52,1,South,1
+ORD1371,2025-01-16,James Jones,Beauty & Personal Care,Sunscreen SPF 50,78.64,2,East,0
+ORD1372,2025-04-06,Richard Jackson,Electronics,Bluetooth Speaker,46.37,1,South,1
+ORD1373,2025-06-13,Jessica Hernandez,Home & Kitchen,Silicon SpatulaSet,225.06,2,East,0
+ORD1374,2025-06-20,Charles Garcia,Sports & Outdoors,Dumbbells (Pair),68.29,2,South,0
+ORD1375,2025-06-29,Charles Gonzalez,Beauty & Personal Care,Face Moisturizer,19.77,1,South,0
+ORD1376,2025-05-08,Robert Hernandez,Electronics,Smart Watch,68.34,1,North,1
+ORD1377,2025-04-25,James Rodriguez,Home & Kitchen,Coffee Maker,103.6,2,North,0
+ORD1378,2025-01-13,Richard Anderson,Sports & Outdoors,Water Bottle,141.15,3,West,1
+ORD1379,2025-05-20,Richard Brown,Sports & Outdoors,Running Shoes,119.33,2,South,1
+ORD1380,2025-01-19,Mary Martinez,Electronics,Bluetooth Speaker,42.57,1,East,0
+ORD1381,2025-04-07,Jennifer Williams,Beauty & Personal Care,Face Moisturizer,44.46,1,West,0
+ORD1382,2025-04-21,Jennifer Martin,Sports & Outdoors,Water Bottle,36.52,1,South,1
+ORD1383,2025-06-28,Sarah Moore,Clothing,Athletic Socks,14.8,1,West,1
+ORD1384,2025-02-09,Mary Lopez,Electronics,Charging Dock,128.87,1,West,0
+ORD1385,2025-01-25,James Miller,Home & Kitchen,Vacuum Cleaner,323.62,5,North,1
+ORD1386,2025-04-12,Jessica Thomas,Clothing,Cotton T-Shirt,58.75,2,East,1
+ORD1387,2025-04-05,Jennifer Anderson,Electronics,Bluetooth Speaker,61.61,1,East,0
+ORD1388,2025-02-08,Patricia Williams,Clothing,Baseball Cap,47.82,1,South,0
+ORD1389,2025-04-10,Thomas Wilson,Beauty & Personal Care,Lip Balm,16.72,1,East,0
+ORD1390,2025-04-12,Mary Taylor,Beauty & Personal Care,Hair Dryer,99.21,3,South,0
+ORD1391,2025-04-25,Jennifer Garcia,Home & Kitchen,Coffee Maker,59.45,1,West,0
+ORD1392,2025-06-10,Robert Martin,Clothing,Athletic Socks,222.83,4,North,0
+ORD1393,2025-04-10,Sarah Gonzalez,Beauty & Personal Care,Electric Toothbrush,81.69,3,North,1
+ORD1394,2025-01-29,Susan Jones,Home & Kitchen,Silicon SpatulaSet,94.63,1,North,0
+ORD1395,2025-05-25,Patricia Martinez,Beauty & Personal Care,Electric Toothbrush,53.32,3,West,1
+ORD1396,2025-01-10,Jennifer Rodriguez,Sports & Outdoors,Water Bottle,118.51,2,West,0
+ORD1397,2025-04-12,David Davis,Electronics,Charging Dock,550.58,4,North,1
+ORD1398,2025-03-19,Elizabeth Rodriguez,Sports & Outdoors,Yoga Mat,149.09,5,East,1
+ORD1399,2025-03-24,William Wilson,Beauty & Personal Care,Face Moisturizer,15.82,1,West,1
+ORD1400,2025-05-13,Barbara Johnson,Beauty & Personal Care,Sunscreen SPF 50,34.25,1,West,0
+ORD1401,2025-05-15,Charles Smith,Home & Kitchen,Coffee Maker,108.23,3,North,0
+ORD1402,2025-01-09,Joseph Johnson,Clothing,Denim Jacket,51.18,1,West,0
+ORD1403,2025-06-24,James Davis,Clothing,Woolen Sweater,18.88,1,West,1
+ORD1404,2025-03-30,Jennifer Rodriguez,Electronics,Bluetooth Speaker,35.96,1,South,0
+ORD1405,2025-06-15,Linda Miller,Clothing,Woolen Sweater,53.23,1,North,1
+ORD1406,2025-02-03,Jennifer Martin,Electronics,Smart Watch,126.61,1,East,1
+ORD1407,2025-04-19,Richard Lopez,Sports & Outdoors,Dumbbells (Pair),34.64,1,West,0
+ORD1408,2025-01-02,Thomas Lopez,Beauty & Personal Care,Hair Dryer,38.09,2,North,1
+ORD1409,2025-01-17,David Rodriguez,Clothing,Athletic Socks,45.55,1,East,0
+ORD1410,2025-02-08,Thomas Davis,Electronics,Laptop Stand,68.35,1,South,0
+ORD1411,2025-06-17,Jessica Martinez,Clothing,Woolen Sweater,46.84,1,South,1
+ORD1412,2025-02-26,Sarah Thomas,Clothing,Baseball Cap,18.5,1,South,1
+ORD1413,2025-01-25,Jessica Jones,Clothing,Baseball Cap,38.31,2,East,0
+ORD1414,2025-02-26,Barbara Davis,Clothing,Woolen Sweater,53.13,2,East,1
+ORD1415,2025-04-29,Patricia Thomas,Electronics,Laptop Stand,104.48,1,West,0
+ORD1416,2025-05-09,Patricia Gonzalez,Beauty & Personal Care,Electric Toothbrush,40.22,1,South,0
+ORD1417,2025-02-21,David Wilson,Beauty & Personal Care,Lip Balm,39.91,1,South,0
+ORD1418,2025-05-05,David Garcia,Clothing,Cotton T-Shirt,23.68,1,South,0
+ORD1419,2025-05-06,John Jones,Beauty & Personal Care,Lip Balm,45.85,2,West,1
+ORD1420,2025-01-02,Mary Moore,Home & Kitchen,Vacuum Cleaner,434.64,4,South,0
+ORD1421,2025-06-23,James Davis,Home & Kitchen,Vacuum Cleaner,25.78,1,East,0
+ORD1422,2025-01-17,Mary Martinez,Clothing,Woolen Sweater,79.64,2,East,1
+ORD1423,2025-06-25,Robert Hernandez,Sports & Outdoors,Dumbbells (Pair),51.43,2,West,0
+ORD1424,2025-02-28,Linda Jones,Home & Kitchen,Air Fryer,32.74,1,East,0
+ORD1425,2025-04-07,William Moore,Beauty & Personal Care,Face Moisturizer,9.77,1,North,0
+ORD1426,2025-01-13,Patricia Wilson,Sports & Outdoors,Camping Tent,31.43,1,South,0
+ORD1427,2025-06-27,James Martinez,Sports & Outdoors,Yoga Mat,65.1,2,South,1
+ORD1428,2025-01-27,Thomas Martin,Electronics,Bluetooth Speaker,42.75,1,South,0
+ORD1429,2025-03-09,Thomas Miller,Clothing,Woolen Sweater,11.97,1,West,0
+ORD1430,2025-06-26,Jessica Hernandez,Home & Kitchen,Air Fryer,24.35,1,North,1
+ORD1431,2025-02-08,John Taylor,Electronics,Wireless Headphones,429.28,4,West,1
+ORD1432,2025-03-09,Joseph Johnson,Electronics,Smart Watch,396.81,3,East,1
+ORD1433,2025-04-20,Patricia Brown,Electronics,Wireless Headphones,328.81,3,South,1
+ORD1434,2025-04-02,Joseph Martin,Clothing,Cotton T-Shirt,27.14,1,North,1
+ORD1435,2025-04-13,Joseph Rodriguez,Sports & Outdoors,Camping Tent,114.35,2,South,0
+ORD1436,2025-02-03,Mary Garcia,Electronics,Charging Dock,351.68,4,West,0
+ORD1437,2025-06-06,Richard Lopez,Beauty & Personal Care,Face Moisturizer,121.67,3,South,1
+ORD1438,2025-05-05,Patricia Wilson,Sports & Outdoors,Yoga Mat,57.57,1,North,0
+ORD1439,2025-06-21,David Taylor,Beauty & Personal Care,Hair Dryer,32.48,1,South,1
+ORD1440,2025-03-30,Richard Jones,Beauty & Personal Care,Hair Dryer,31.81,1,South,1
+ORD1441,2025-05-07,Jennifer Williams,Sports & Outdoors,Dumbbells (Pair),78.06,1,North,0
+ORD1442,2025-05-21,Richard Gonzalez,Home & Kitchen,Air Fryer,99.13,1,West,0
+ORD1443,2025-05-08,Joseph Hernandez,Electronics,Charging Dock,64.26,2,West,1
+ORD1444,2025-01-10,Sarah Moore,Electronics,Wireless Headphones,291.16,2,East,0
+ORD1445,2025-06-17,Joseph Hernandez,Clothing,Cotton T-Shirt,156.65,3,East,1
+ORD1446,2025-06-18,Barbara Anderson,Electronics,Wireless Headphones,113.22,2,East,1
+ORD1447,2025-06-12,Elizabeth Moore,Beauty & Personal Care,Electric Toothbrush,19.39,2,South,1
+ORD1448,2025-02-05,Susan Brown,Clothing,Baseball Cap,16.04,1,West,0
+ORD1449,2025-04-28,Michael Hernandez,Electronics,Charging Dock,105.99,1,North,1
+ORD1450,2025-04-28,Charles Taylor,Home & Kitchen,Scented Candle,92.3,1,West,1
+ORD1451,2025-05-11,Jennifer Jackson,Home & Kitchen,Coffee Maker,84.04,1,East,1
+ORD1452,2025-04-18,Karen Davis,Clothing,Woolen Sweater,234.1,4,West,0
+ORD1453,2025-02-05,Susan Martin,Beauty & Personal Care,Electric Toothbrush,84.81,3,East,0
+ORD1454,2025-02-21,Michael Martin,Clothing,Athletic Socks,66.53,4,South,1
+ORD1455,2025-01-30,Barbara Moore,Sports & Outdoors,Running Shoes,58.37,1,West,1
+ORD1456,2025-04-19,James Taylor,Electronics,Wireless Headphones,36.37,1,North,0
+ORD1457,2025-03-10,Jennifer Martinez,Clothing,Denim Jacket,133.59,3,East,0
+ORD1458,2025-05-19,Mary Lopez,Sports & Outdoors,Yoga Mat,117.82,2,South,1
+ORD1459,2025-03-02,Thomas Martinez,Electronics,Charging Dock,144.8,1,East,0
+ORD1460,2025-01-04,William Miller,Beauty & Personal Care,Lip Balm,125.17,3,East,0
+ORD1461,2025-02-19,Elizabeth Anderson,Home & Kitchen,Air Fryer,33.25,1,North,1
+ORD1462,2025-01-11,Susan Rodriguez,Beauty & Personal Care,Electric Toothbrush,29.61,1,East,0
+ORD1463,2025-03-26,Joseph Jones,Electronics,Smart Watch,406.5,4,East,1
+ORD1464,2025-05-27,Sarah Lopez,Electronics,Bluetooth Speaker,144.84,1,North,0
+ORD1465,2025-04-17,Sarah Moore,Sports & Outdoors,Yoga Mat,72.42,1,East,1
+ORD1466,2025-04-03,Elizabeth Miller,Beauty & Personal Care,Hair Dryer,28.77,1,North,0
+ORD1467,2025-06-21,Barbara Anderson,Home & Kitchen,Silicon SpatulaSet,162.41,4,North,1
+ORD1468,2025-04-08,Patricia Gonzalez,Clothing,Baseball Cap,22.47,2,East,1
+ORD1469,2025-05-05,Mary Martinez,Home & Kitchen,Vacuum Cleaner,114.56,1,South,0
+ORD1470,2025-06-10,John Miller,Home & Kitchen,Scented Candle,109.76,3,West,0
+ORD1471,2025-06-25,Robert Smith,Sports & Outdoors,Dumbbells (Pair),19.76,1,South,1
+ORD1472,2025-05-23,John Jackson,Home & Kitchen,Vacuum Cleaner,62.37,1,West,1
+ORD1473,2025-03-22,James Gonzalez,Electronics,Laptop Stand,116.43,1,North,0
+ORD1474,2025-06-29,John Lopez,Beauty & Personal Care,Face Moisturizer,33.38,1,North,1
+ORD1475,2025-04-23,Richard Gonzalez,Electronics,Charging Dock,56.38,1,West,1
+ORD1476,2025-06-12,Robert Martinez,Clothing,Cotton T-Shirt,37.75,1,North,0
+ORD1477,2025-01-02,Charles Martin,Sports & Outdoors,Running Shoes,20.53,1,South,1
+ORD1478,2025-02-24,Susan Taylor,Home & Kitchen,Coffee Maker,79.77,1,East,0
+ORD1479,2025-01-30,Jennifer Jackson,Electronics,Laptop Stand,95.96,1,East,0
+ORD1480,2025-03-06,Patricia Miller,Beauty & Personal Care,Lip Balm,84.86,4,South,0
+ORD1481,2025-03-14,Karen Williams,Home & Kitchen,Vacuum Cleaner,49.48,1,East,0
+ORD1482,2025-05-25,Charles Lopez,Clothing,Woolen Sweater,25.66,1,South,1
+ORD1483,2025-03-12,Barbara Jones,Clothing,Woolen Sweater,27.94,1,East,1
+ORD1484,2025-05-22,Patricia Garcia,Beauty & Personal Care,Face Moisturizer,119.32,3,South,0
+ORD1485,2025-03-09,John Williams,Electronics,Laptop Stand,255.03,2,West,0
+ORD1486,2025-01-10,Sarah Rodriguez,Beauty & Personal Care,Hair Dryer,36.68,1,East,1
+ORD1487,2025-02-27,Charles Martinez,Home & Kitchen,Scented Candle,24.51,1,East,0
+ORD1488,2025-06-19,Linda Martin,Home & Kitchen,Silicon SpatulaSet,31.72,1,South,1
+ORD1489,2025-04-02,Mary Davis,Sports & Outdoors,Water Bottle,39.01,1,North,0
+ORD1490,2025-05-13,Barbara Gonzalez,Sports & Outdoors,Camping Tent,52.78,3,East,0
+ORD1491,2025-06-30,Thomas Rodriguez,Clothing,Baseball Cap,18.69,1,West,1
+ORD1492,2025-05-31,John Taylor,Clothing,Woolen Sweater,105.72,5,West,1
+ORD1493,2025-03-30,Jessica Thomas,Beauty & Personal Care,Face Moisturizer,13.14,1,South,0
+ORD1494,2025-01-20,Thomas Rodriguez,Home & Kitchen,Coffee Maker,53.03,1,North,0
+ORD1495,2025-04-17,David Brown,Sports & Outdoors,Camping Tent,53.4,1,West,0
+ORD1496,2025-03-04,Mary Jones,Beauty & Personal Care,Hair Dryer,31.29,1,North,0
+ORD1497,2025-01-15,Jennifer Rodriguez,Home & Kitchen,Silicon SpatulaSet,311.73,4,North,1
+ORD1498,2025-01-22,Michael Anderson,Beauty & Personal Care,Lip Balm,42.93,3,West,0
+ORD1499,2025-05-30,Jennifer Martin,Beauty & Personal Care,Electric Toothbrush,33.37,1,West,0
+ORD1500,2025-02-28,Richard Gonzalez,Home & Kitchen,Air Fryer,69.88,1,West,0
+ORD1501,2025-06-05,Patricia Garcia,Sports & Outdoors,Running Shoes,72.05,1,North,0
+ORD1502,2025-05-04,Robert Martin,Beauty & Personal Care,Face Moisturizer,110.01,3,West,1
+ORD1503,2025-04-05,Mary Taylor,Sports & Outdoors,Water Bottle,185.35,4,West,1
+ORD1504,2025-05-31,Charles Brown,Sports & Outdoors,Water Bottle,64.78,1,North,1
+ORD1505,2025-06-03,Sarah Wilson,Clothing,Denim Jacket,47.18,1,North,0
+ORD1506,2025-05-14,James Gonzalez,Home & Kitchen,Vacuum Cleaner,26.19,1,West,1
+ORD1507,2025-03-08,Sarah Wilson,Beauty & Personal Care,Electric Toothbrush,89.39,2,West,0
+ORD1508,2025-04-16,Sarah Moore,Sports & Outdoors,Water Bottle,51.07,1,East,1
+ORD1509,2025-05-28,Barbara Gonzalez,Home & Kitchen,Air Fryer,123.78,2,South,0
+ORD1510,2025-02-24,Thomas Gonzalez,Clothing,Baseball Cap,88.46,2,North,0
+ORD1511,2025-04-10,James Williams,Home & Kitchen,Scented Candle,242.86,4,North,1
+ORD1512,2025-02-26,Barbara Williams,Beauty & Personal Care,Face Moisturizer,84.87,2,West,1
+ORD1513,2025-06-02,Mary Garcia,Sports & Outdoors,Camping Tent,70.29,1,East,0
+ORD1514,2025-01-09,Karen Taylor,Beauty & Personal Care,Sunscreen SPF 50,65.88,2,East,0
+ORD1515,2025-06-17,James Garcia,Electronics,Bluetooth Speaker,144.75,2,West,1
+ORD1516,2025-05-31,Michael Taylor,Electronics,Wireless Headphones,383.8,4,East,1
+ORD1517,2025-03-12,Linda Martin,Home & Kitchen,Scented Candle,301.46,4,East,0
+ORD1518,2025-04-15,Thomas Brown,Beauty & Personal Care,Face Moisturizer,20.58,1,North,1
+ORD1519,2025-05-18,Charles Rodriguez,Sports & Outdoors,Camping Tent,65.05,1,East,1
+ORD1520,2025-06-24,Joseph Jackson,Electronics,Charging Dock,38.11,1,South,0
+ORD1521,2025-03-22,Susan Lopez,Beauty & Personal Care,Hair Dryer,38.79,1,South,1
+ORD1522,2025-01-24,Richard Hernandez,Electronics,Laptop Stand,348.75,4,East,0
+ORD1523,2025-05-27,William Garcia,Home & Kitchen,Scented Candle,79.32,2,South,1
+ORD1524,2025-02-22,Linda Miller,Home & Kitchen,Silicon SpatulaSet,96.79,1,North,0
+ORD1525,2025-06-23,Jessica Martin,Electronics,Laptop Stand,527.05,4,East,1
+ORD1526,2025-05-07,Charles Rodriguez,Sports & Outdoors,Water Bottle,372.7,5,East,1
+ORD1527,2025-02-26,Charles Jones,Electronics,Laptop Stand,174.8,2,North,1
+ORD1528,2025-04-11,Jennifer Anderson,Electronics,Laptop Stand,112.71,1,North,0
+ORD1529,2025-04-08,Charles Brown,Clothing,Athletic Socks,45.97,2,East,0
+ORD1530,2025-03-10,Jessica Martin,Clothing,Athletic Socks,31.2,1,West,1
+ORD1531,2025-04-04,Richard Rodriguez,Sports & Outdoors,Water Bottle,78.65,1,South,0
+ORD1532,2025-03-11,Linda Moore,Sports & Outdoors,Camping Tent,67.0,1,South,1
+ORD1533,2025-01-03,Jennifer Wilson,Sports & Outdoors,Water Bottle,351.05,5,East,1
+ORD1534,2025-03-18,William Moore,Beauty & Personal Care,Face Moisturizer,33.55,1,North,0
+ORD1535,2025-03-07,Jessica Brown,Sports & Outdoors,Dumbbells (Pair),38.42,1,East,1
+ORD1536,2025-01-06,Susan Brown,Clothing,Baseball Cap,38.79,1,South,1
+ORD1537,2025-04-01,David Taylor,Sports & Outdoors,Camping Tent,119.31,3,East,1
+ORD1538,2025-06-11,Robert Garcia,Clothing,Woolen Sweater,77.16,2,North,0
+ORD1539,2025-02-11,David Davis,Clothing,Athletic Socks,91.04,2,West,1
+ORD1540,2025-04-24,Barbara Jackson,Beauty & Personal Care,Lip Balm,14.8,1,North,0
+ORD1541,2025-03-02,William Williams,Home & Kitchen,Coffee Maker,25.03,1,West,0
+ORD1542,2025-01-07,Richard Taylor,Electronics,Wireless Headphones,48.63,1,West,1
+ORD1543,2025-02-28,Linda Martinez,Sports & Outdoors,Water Bottle,69.5,1,North,0
+ORD1544,2025-06-19,Barbara Hernandez,Sports & Outdoors,Camping Tent,250.69,5,East,1
+ORD1545,2025-02-04,Sarah Garcia,Beauty & Personal Care,Hair Dryer,35.71,1,West,1
+ORD1546,2025-03-30,Jessica Moore,Home & Kitchen,Air Fryer,53.41,1,East,0
+ORD1547,2025-03-19,James Smith,Beauty & Personal Care,Sunscreen SPF 50,25.36,1,North,1
+ORD1548,2025-05-03,Elizabeth Smith,Sports & Outdoors,Dumbbells (Pair),66.79,1,East,0
+ORD1549,2025-04-16,Sarah Wilson,Sports & Outdoors,Water Bottle,62.91,1,West,1
+ORD1550,2025-02-26,William Williams,Sports & Outdoors,Water Bottle,67.0,1,East,1
