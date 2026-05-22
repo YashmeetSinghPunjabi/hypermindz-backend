@@ -627,7 +627,7 @@ def query_tabular_data(
         raise HTTPException(status_code=400, detail="Gemini API Key is missing. Please configure it in your Settings or environment.")
     
     llm = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash", 
+        model="gemini-1.5-flash-latest", 
         google_api_key=api_key,
         temperature=0,
         convert_system_message_to_human=True
@@ -637,10 +637,18 @@ def query_tabular_data(
         chat_history = db_manager.get_chat_history(user_id, payload.file_id)
         history_str = "\n".join([f"{m['role']}: {m['content']}" for m in chat_history[-5:]])
 
-        agent_executor = create_sql_agent(llm, db=db, agent_type="tool-calling", verbose=True, return_intermediate_steps=True)
+        agent_executor = create_sql_agent(
+            llm, 
+            db=db, 
+            agent_type="tool-calling", 
+            verbose=True, 
+            return_intermediate_steps=True,
+            handle_parsing_errors=True
+        )
         
         agent_prompt = f"""
 You are an expert data analyst. Translate the user's natural language question into an optimized, executable SQLite query and answer it.
+IMPORTANT: You MUST use the `sql_db_query` tool to execute the query before providing your final answer.
 Chat History for context:
 {history_str}
 
@@ -659,7 +667,12 @@ User Question: {payload.natural_language_query}
                 break
                 
         if not sql_query.strip():
-             return handle_unanswerable(payload, user_id, explanation, file_info["file_name"])
+            import re
+            match = re.search(r"```sql\n(.*?)\n```", explanation, re.DOTALL | re.IGNORECASE)
+            if match:
+                sql_query = match.group(1)
+            else:
+                return handle_unanswerable(payload, user_id, explanation, file_info["file_name"])
 
         sanitized_sql = SQLSecurityValidator.validate_query(sql_query)
         
@@ -674,11 +687,20 @@ User Question: {payload.natural_language_query}
         viz_chain = viz_prompt | llm | JsonOutputParser()
         viz_config = viz_chain.invoke({"sql": sanitized_sql, "question": payload.natural_language_query})
         
+        actual_cols = list(df_result.columns)
+        x_key = viz_config.get("x_axis_key")
+        y_key = viz_config.get("y_axis_key")
+        
+        if x_key not in actual_cols:
+            x_key = actual_cols[0] if actual_cols else None
+        if y_key not in actual_cols:
+            y_key = actual_cols[1] if len(actual_cols) > 1 else (actual_cols[0] if actual_cols else None)
+            
         viz_cfg = {
             "recommended": viz_config.get("visualization_recommended", False),
             "type": viz_config.get("chart_type", "none"),
-            "x_axis_key": viz_config.get("x_axis_key"),
-            "y_axis_key": viz_config.get("y_axis_key")
+            "x_axis_key": x_key,
+            "y_axis_key": y_key
         }
 
         db_manager.add_chat_message(user_id, payload.file_id, "user", payload.natural_language_query)
