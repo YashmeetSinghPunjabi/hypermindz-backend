@@ -627,19 +627,12 @@ def query_tabular_data(
     if not api_key:
         raise HTTPException(status_code=400, detail="Gemini API Key is missing. Please configure it in your Settings or environment.")
     
-    primary_llm = ChatGoogleGenerativeAI(
+    llm = ChatGoogleGenerativeAI(
         model="gemini-2.5-flash", 
         google_api_key=api_key,
         temperature=0,
         convert_system_message_to_human=True
     )
-    fallback_llm = ChatGoogleGenerativeAI(
-        model="gemini-2.0-flash", 
-        google_api_key=api_key,
-        temperature=0,
-        convert_system_message_to_human=True
-    )
-    llm = primary_llm.with_fallbacks([fallback_llm])
 
     try:
         chat_history = db_manager.get_chat_history(user_id, payload.file_id)
