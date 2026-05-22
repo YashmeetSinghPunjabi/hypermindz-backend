@@ -628,7 +628,7 @@ def query_tabular_data(
         raise HTTPException(status_code=400, detail="Gemini API Key is missing. Please configure it in your Settings or environment.")
     
     llm = ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash", 
+        model="gemini-2.5-flash-lite", 
         google_api_key=api_key,
         temperature=0,
         convert_system_message_to_human=True
