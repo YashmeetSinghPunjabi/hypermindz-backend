@@ -20,7 +20,7 @@ from db_manager import init_db
 import db_manager
 import auth
 
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_groq import ChatGroq
 from langchain_community.utilities import SQLDatabase
 from langchain_community.agent_toolkits import create_sql_agent
 from langchain_core.prompts import ChatPromptTemplate
@@ -623,15 +623,14 @@ def query_tabular_data(
     db_uri = f"sqlite:///{db_path}"
     db = SQLDatabase.from_uri(db_uri)
 
-    api_key = os.getenv("GEMINI_API_KEY")
+    api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
-        raise HTTPException(status_code=400, detail="Gemini API Key is missing. Please configure it in your Settings or environment.")
+        raise HTTPException(status_code=400, detail="Groq API Key is missing. Please configure it in your Settings or environment.")
     
-    llm = ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash", 
-        google_api_key=api_key,
-        temperature=0,
-        convert_system_message_to_human=True
+    llm = ChatGroq(
+        model="llama3-70b-8192", 
+        groq_api_key=api_key,
+        temperature=0
     )
 
     try:
@@ -733,7 +732,7 @@ User Question: {payload.natural_language_query}
         error_str = str(e)
         
         if "429" in error_str or "quota" in error_str.lower() or "RESOURCE_EXHAUSTED" in error_str:
-            clean_msg = "Google Gemini Free-Tier Quota Exceeded (Max 20 requests per minute). Please wait 60 seconds and try again, or upgrade your API Key in Settings."
+            clean_msg = "Groq Free-Tier Quota Exceeded. Please wait a moment and try again, or upgrade your API Key in Settings."
             db_manager.add_chat_message(user_id, payload.file_id, "model", clean_msg)
             raise HTTPException(status_code=429, detail=clean_msg)
             
