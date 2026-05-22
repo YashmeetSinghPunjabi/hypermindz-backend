@@ -8,7 +8,7 @@ import json
 import uuid
 from typing import Dict, List, Optional, Any
 from pydantic import BaseModel, Field
-from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Depends, Header, status
+from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Depends, Header, status, Request
 from fastapi.middleware.cors import CORSMiddleware
 
 # Initialize Google GenAI API Client tools
@@ -613,6 +613,7 @@ def handle_unanswerable(payload: QueryExecutionPayload, user_id: str, explanatio
 @app.post("/api/query", response_model=QueryResultResponse)
 def query_tabular_data(
     payload: QueryExecutionPayload,
+    request: Request,
     user_id: str = Depends(auth.get_current_user_id)
 ):
     file_info = db_manager.get_file_by_id(payload.file_id, user_id)
@@ -623,7 +624,7 @@ def query_tabular_data(
     db_uri = f"sqlite:///{db_path}"
     db = SQLDatabase.from_uri(db_uri)
 
-    api_key = os.getenv("GEMINI_API_KEY")
+    api_key = request.headers.get("X-Gemini-Key", "").strip() or os.getenv("GEMINI_API_KEY")
     if not api_key:
         raise HTTPException(status_code=400, detail="Gemini API Key is missing. Please configure it in your Settings or environment.")
     
