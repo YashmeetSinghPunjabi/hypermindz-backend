@@ -737,5 +737,12 @@ User Question: {payload.natural_language_query}
         raise e
     except Exception as e:
         db_manager.add_chat_message(user_id, payload.file_id, "user", payload.natural_language_query)
-        db_manager.add_chat_message(user_id, payload.file_id, "model", f"Error: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Agent Error: {str(e)}")
+        error_str = str(e)
+        
+        if "429" in error_str or "quota" in error_str.lower() or "RESOURCE_EXHAUSTED" in error_str:
+            clean_msg = "Google Gemini Free-Tier Quota Exceeded (Max 20 requests per minute). Please wait 60 seconds and try again, or upgrade your API Key in Settings."
+            db_manager.add_chat_message(user_id, payload.file_id, "model", clean_msg)
+            raise HTTPException(status_code=429, detail=clean_msg)
+            
+        db_manager.add_chat_message(user_id, payload.file_id, "model", f"Error: {error_str}")
+        raise HTTPException(status_code=500, detail=f"Agent Error: {error_str}")
