@@ -628,7 +628,7 @@ def query_tabular_data(
         raise HTTPException(status_code=400, detail="Groq API Key is missing. Please configure it in your Settings or environment.")
     
     llm = ChatGroq(
-        model="llama3-70b-8192", 
+        model="llama-3.3-70b-versatile", 
         groq_api_key=api_key,
         temperature=0
     )
