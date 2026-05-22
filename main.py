@@ -635,7 +635,7 @@ def query_tabular_data(
 
     try:
         chat_history = db_manager.get_chat_history(user_id, payload.file_id)
-        history_str = "\\n".join([f"{m['role']}: {m['content']}" for m in chat_history[-5:]])
+        history_str = "\n".join([f"{m['role']}: {m['content']}" for m in chat_history[-5:]])
 
         agent_executor = create_sql_agent(llm, db=db, agent_type="tool-calling", verbose=True, return_intermediate_steps=True)
         
@@ -668,8 +668,8 @@ User Question: {payload.natural_language_query}
         conn.close()
 
         viz_prompt = ChatPromptTemplate.from_messages([
-            ("system", "Analyze this SQL query and its results context to recommend a UI chart. Return ONLY JSON matching this schema: {{\\"visualization_recommended\\": true/false, \\"chart_type\\": \\"bar\\"/\\"line\\"/\\"pie\\"/\\"none\\", \\"x_axis_key\\": \\"column_name_or_null\\", \\"y_axis_key\\": \\"column_name_or_null\\"}}"),
-            ("human", "SQL: {sql}\\nQuestion: {question}")
+            ("system", 'Analyze this SQL query and its results context to recommend a UI chart. Return ONLY JSON matching this schema: {{"visualization_recommended": true/false, "chart_type": "bar"/"line"/"pie"/"none", "x_axis_key": "column_name_or_null", "y_axis_key": "column_name_or_null"}}'),
+            ("human", "SQL: {sql}\nQuestion: {question}")
         ])
         viz_chain = viz_prompt | llm | JsonOutputParser()
         viz_config = viz_chain.invoke({"sql": sanitized_sql, "question": payload.natural_language_query})
