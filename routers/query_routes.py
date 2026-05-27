@@ -136,13 +136,10 @@ def query_tabular_data(
         agent_prompt = f"""
 You are an expert data analyst. Translate the user's natural language question into an optimized, executable SQLite query and answer it.
 
-CRITICAL FINAL ANSWER INSTRUCTIONS:
-1. No matter what tools you use to get the answer, your FINAL ANSWER MUST contain the exact SQL query you used, wrapped in a markdown block like this:
-```sql
-SELECT * FROM table_name;
-```
-2. NEVER output raw python tuples (like [('2025-01-01', 58.58)]) in your final answer. The UI will render charts automatically as long as you provide the ```sql block.
-3. If you do not include the ```sql block in your final answer, the visualization system will crash.
+CRITICAL INSTRUCTIONS:
+1. DO NOT just explain what you are going to do. You MUST actually provide the SQL query.
+2. You MUST either use the `sql_db_query` tool to execute the query, OR output the raw query wrapped exactly in a ```sql ... ``` markdown block in your final answer.
+3. Stop talking and just output the SQL.
 
 Chat History for context:
 {history_str}
@@ -150,8 +147,18 @@ Chat History for context:
 User Question: {payload.natural_language_query}
 """
         response = agent_executor.invoke({"input": agent_prompt})
-        explanation = response.get("output", "")
-        
+        raw_output = response.get("output", "")
+        if isinstance(raw_output, list):
+            text_parts = []
+            for part in raw_output:
+                if isinstance(part, str):
+                    text_parts.append(part)
+                elif isinstance(part, dict) and "text" in part:
+                    text_parts.append(part["text"])
+            explanation = "".join(text_parts)
+        else:
+            explanation = str(raw_output)
+
         sql_query = ""
         for action, observation in response.get("intermediate_steps", []):
             if action.tool == "sql_db_query":
