@@ -61,4 +61,13 @@ def get_current_user_id(credentials: HTTPAuthorizationCredentials = Depends(secu
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Invalid token content",
         )
+    
+    import db_manager
+    active_token = db_manager.get_user_active_token(user_id)
+    if active_token and active_token != token:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Session expired. You logged in from another device.",
+        )
+        
     return user_id

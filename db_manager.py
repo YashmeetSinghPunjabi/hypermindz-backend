@@ -28,9 +28,16 @@ def init_db():
         id TEXT PRIMARY KEY,
         email TEXT UNIQUE NOT NULL,
         password_hash TEXT NOT NULL,
+        active_token TEXT,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );
     """)
+    
+    # Safely add active_token if it doesn't exist (for existing databases)
+    cursor.execute("PRAGMA table_info(users);")
+    columns = [row["name"] for row in cursor.fetchall()]
+    if "active_token" not in columns:
+        cursor.execute("ALTER TABLE users ADD COLUMN active_token TEXT;")
     
     # 2. Files Table
     cursor.execute("""
@@ -109,6 +116,21 @@ def get_user_by_id(user_id: str) -> Optional[Dict[str, Any]]:
     row = cursor.fetchone()
     conn.close()
     return dict(row) if row else None
+
+def update_user_active_token(user_id: str, token: str):
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute("UPDATE users SET active_token = ? WHERE id = ?", (token, user_id))
+    conn.commit()
+    conn.close()
+
+def get_user_active_token(user_id: str) -> Optional[str]:
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT active_token FROM users WHERE id = ?", (user_id,))
+    row = cursor.fetchone()
+    conn.close()
+    return row["active_token"] if row else None
 
 # --- File Management ---
 

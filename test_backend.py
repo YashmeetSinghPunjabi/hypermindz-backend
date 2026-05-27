@@ -8,7 +8,7 @@ from unittest.mock import patch, MagicMock
 # Set test database path before importing db_manager
 import db_manager
 import auth
-import main
+import utils
 
 class TestBackendPipeline(unittest.TestCase):
     
@@ -16,7 +16,6 @@ class TestBackendPipeline(unittest.TestCase):
     def setUpClass(cls):
         # Override metadata database path to a test db
         db_manager.METADATA_DB_PATH = "backend/test_metadata.db"
-        main.METADATA_DB_PATH = "backend/test_metadata.db"
         if os.path.exists("backend/test_metadata.db"):
             os.remove("backend/test_metadata.db")
         db_manager.init_db()
@@ -61,23 +60,23 @@ class TestBackendPipeline(unittest.TestCase):
     def test_02_sql_security_validator(self):
         # Test valid queries
         self.assertEqual(
-            main.SQLSecurityValidator.validate_query("SELECT * FROM data_table;"),
+            utils.SQLSecurityValidator.validate_query("SELECT * FROM data_table;"),
             "SELECT * FROM data_table;"
         )
         self.assertEqual(
-            main.SQLSecurityValidator.validate_query("WITH summary AS (SELECT val FROM table) SELECT * FROM summary"),
+            utils.SQLSecurityValidator.validate_query("WITH summary AS (SELECT val FROM table) SELECT * FROM summary"),
             "WITH summary AS (SELECT val FROM table) SELECT * FROM summary"
         )
         
         # Test mutations (should raise HTTPException)
         with self.assertRaises(Exception) as ctx:
-            main.SQLSecurityValidator.validate_query("DROP TABLE data_table;")
+            utils.SQLSecurityValidator.validate_query("DROP TABLE data_table;")
         
         with self.assertRaises(Exception) as ctx:
-            main.SQLSecurityValidator.validate_query("UPDATE data_table SET col = 1;")
+            utils.SQLSecurityValidator.validate_query("UPDATE data_table SET col = 1;")
             
         with self.assertRaises(Exception) as ctx:
-            main.SQLSecurityValidator.validate_query("SELECT * FROM data_table; DELETE FROM data_table;")
+            utils.SQLSecurityValidator.validate_query("SELECT * FROM data_table; DELETE FROM data_table;")
 
     def test_03_file_metadata_and_chat_history(self):
         user_id = "test_user_123"
