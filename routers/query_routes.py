@@ -68,8 +68,7 @@ def query_tabular_data(
     try:
         # Check if the query is a raw SQL query
         query_stripped = payload.natural_language_query.strip().strip("`").replace("sql\n", "").strip()
-        upper_query = query_stripped.upper()
-        if upper_query.startswith("SELECT") or upper_query.startswith("WITH"):
+        if payload.query_mode == "sql":
             sanitized_sql = SQLSecurityValidator.validate_query(query_stripped)
             conn = sqlite3.connect(db_path)
             df_result = pd.read_sql_query(sanitized_sql, conn)

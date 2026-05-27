@@ -27,6 +27,7 @@ class QueryExecutionPayload(BaseModel):
     file_id: str
     natural_language_query: str
     ai_model: Optional[str] = "gemini-2.5-flash"
+    query_mode: Optional[str] = "nl"
 
 class QueryResultResponse(BaseModel):
     sql_query: str
