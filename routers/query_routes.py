@@ -161,20 +161,30 @@ User Question: {payload.natural_language_query}
 
         sql_query = ""
         for action, observation in response.get("intermediate_steps", []):
-            if action.tool == "sql_db_query":
-                if isinstance(action.tool_input, dict):
-                    sql_query = action.tool_input.get("query", "")
+            tool_name = getattr(action, "tool", str(action))
+            if "sql_db_query" in tool_name:
+                tool_input = getattr(action, "tool_input", {})
+                if isinstance(tool_input, dict):
+                    sql_query = tool_input.get("query", "")
                 else:
-                    sql_query = str(action.tool_input)
+                    sql_query = str(tool_input)
                 break
                 
         if not sql_query.strip():
             import re
-            match = re.search(r"```sql\n(.*?)\n```", explanation, re.DOTALL | re.IGNORECASE)
+            # First fallback: Check explanation for markdown blocks
+            match = re.search(r"```(?:sql)?\n(.*?)\n```", explanation, re.DOTALL | re.IGNORECASE)
             if match:
                 sql_query = match.group(1)
             else:
-                return handle_unanswerable(payload, user_id, explanation, file_info["file_name"])
+                # Second fallback: Aggressively search intermediate steps for the query dict
+                steps_str = str(response.get("intermediate_steps", []))
+                fallback_match = re.search(r"['\"]query['\"]\s*:\s*['\"](SELECT\s+.*?)['\"]", steps_str, re.IGNORECASE | re.DOTALL)
+                if fallback_match:
+                    sql_query = fallback_match.group(1)
+
+        if not sql_query.strip():
+            return handle_unanswerable(payload, user_id, explanation, file_info["file_name"])
 
         sanitized_sql = SQLSecurityValidator.validate_query(sql_query)
         
