@@ -197,7 +197,11 @@ User Question: {payload.natural_language_query}
             ("human", "SQL: {sql}\nQuestion: {question}")
         ])
         viz_chain = viz_prompt | llm | JsonOutputParser()
-        viz_config = viz_chain.invoke({"sql": sanitized_sql, "question": payload.natural_language_query})
+        try:
+            viz_config = viz_chain.invoke({"sql": sanitized_sql, "question": payload.natural_language_query})
+        except Exception as e:
+            print(f"Visualization AI failed (likely rate limit): {e}")
+            viz_config = {"visualization_recommended": False, "chart_type": "none"}
         
         actual_cols = list(df_result.columns)
         x_key = viz_config.get("x_axis_key")
