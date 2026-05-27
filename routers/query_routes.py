@@ -136,10 +136,13 @@ def query_tabular_data(
         agent_prompt = f"""
 You are an expert data analyst. Translate the user's natural language question into an optimized, executable SQLite query and answer it.
 
-CRITICAL INSTRUCTIONS:
-1. DO NOT just explain what you are going to do. You MUST actually provide the SQL query.
-2. You MUST either use the `sql_db_query` tool to execute the query, OR output the raw query wrapped exactly in a ```sql ... ``` markdown block in your final answer.
-3. Stop talking and just output the SQL.
+CRITICAL FINAL ANSWER INSTRUCTIONS:
+1. No matter what tools you use to get the answer, your FINAL ANSWER MUST contain the exact SQL query you used, wrapped in a markdown block like this:
+```sql
+SELECT * FROM table_name;
+```
+2. NEVER output raw python tuples (like [('2025-01-01', 58.58)]) in your final answer. The UI will render charts automatically as long as you provide the ```sql block.
+3. If you do not include the ```sql block in your final answer, the visualization system will crash.
 
 Chat History for context:
 {history_str}
