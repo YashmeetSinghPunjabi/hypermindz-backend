@@ -182,6 +182,10 @@ User Question: {payload.natural_language_query}
                 fallback_match = re.search(r"['\"]query['\"]\s*:\s*['\"](SELECT\s+.*?)['\"]", steps_str, re.IGNORECASE | re.DOTALL)
                 if fallback_match:
                     sql_query = fallback_match.group(1)
+                
+            # Third fallback: Did the AI just spit out raw SQL text directly?
+            if not sql_query.strip() and explanation.strip().upper().startswith("SELECT "):
+                sql_query = explanation.strip()
 
         if not sql_query.strip():
             return handle_unanswerable(payload, user_id, explanation, file_info["file_name"])
