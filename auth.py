@@ -6,15 +6,14 @@ from passlib.context import CryptContext
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 
-SECRET_KEY = os.getenv("JWT_SECRET_KEY", "hypermindz_super_secret_analytics_2026_key")
+SECRET_KEY = os.getenv("JWT_SECRET_KEY")
+if not SECRET_KEY:
+    raise ValueError("FATAL ERROR: JWT_SECRET_KEY environment variable is missing! It is unsafe to use a hardcoded default.")
+
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_DAYS = 7
 
 import bcrypt
-
-SECRET_KEY = os.getenv("JWT_SECRET_KEY", "hypermindz_super_secret_analytics_2026_key")
-ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_DAYS = 7
 
 security_scheme = HTTPBearer()
 
