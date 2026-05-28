@@ -135,19 +135,17 @@ def query_tabular_data(
         )
         
         agent_prompt = f"""
-You are an expert data analyst and a strict SQL AI Agent. Your ONLY job is to write an optimized SQLite query to answer the user's question.
+You are an expert data analyst and an AI SQL Agent. Your job is to answer the user's question using the database.
 
-VERY STRICT OUTPUT INSTRUCTIONS:
-Because you are a lightweight model, you MUST follow these formatting rules exactly, or the system will crash:
-1. You MUST write the raw SQL query in your final response.
-2. The SQL query MUST be wrapped exactly inside a markdown code block like this:
+CRITICAL OUTPUT INSTRUCTIONS:
+1. You MUST use your SQL tools to query the database and analyze the results.
+2. Provide a short, friendly analytical explanation based on the data you found.
+3. You MUST include the raw SQLite query you used wrapped exactly inside a markdown code block like this:
 ```sql
 SELECT * FROM table_name;
 ```
-3. DO NOT output the query as plain text without the markdown block.
-4. DO NOT use bullet points or lists to describe the query instead of writing the code.
-5. Provide ONLY the final answer and the sql block. Stop talking and output the SQL block.
-6. You are querying a SQLite database. Do not use functions that do not exist in SQLite.
+4. Do not use functions that do not exist in SQLite.
+5. NEVER say "I don't know". If you are unsure, write the best possible query to estimate the answer.
 
 DATABASE SCHEMA:
 The ONLY table you need to query is exactly named: `{file_info["table_name"]}`
@@ -159,7 +157,14 @@ Chat History for context:
 
 User Question: {payload.natural_language_query}
 """
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.info(f"\n========== GEMINI REQUEST ==========\n{agent_prompt}\n====================================")
+
         response = agent_executor.invoke({"input": agent_prompt})
+        
+        logger.info(f"\n========== GEMINI RESPONSE ==========\n{response.get('output', '')}\n=====================================")
+        
         raw_output = response.get("output", "")
         if isinstance(raw_output, list):
             text_parts = []
@@ -182,19 +187,16 @@ User Question: {payload.natural_language_query}
                 else:
                     sql_query = str(tool_input)
                 break
-                
-        if not sql_query.strip():
-            import re
-            # First fallback: Check explanation for markdown blocks
-            match = re.search(r"```(?:sql)?\n(.*?)\n```", explanation, re.DOTALL | re.IGNORECASE)
-            if match:
-                sql_query = match.group(1)
-            else:
-                # Second fallback: Aggressively search intermediate steps for the query dict
-                steps_str = str(response.get("intermediate_steps", []))
-                fallback_match = re.search(r"['\"]query['\"]\s*:\s*['\"](SELECT\s+.*?)['\"]", steps_str, re.IGNORECASE | re.DOTALL)
-                if fallback_match:
-                    sql_query = fallback_match.group(1)
+        import re
+        # First fallback: Check explanation for markdown blocks
+        match = re.search(r"```(?:sql)?\s*(.*?)\s*```", explanation, re.DOTALL | re.IGNORECASE)
+        if match:
+            sql_query = match.group(1)
+        else:
+            # Second fallback: Aggressive regex to extract any SELECT statement
+            fallback_match = re.search(r"(SELECT\s+.*)", explanation, re.IGNORECASE | re.DOTALL)
+            if fallback_match:
+                sql_query = fallback_match.group(1)
                 
             # Third fallback: Did the AI just spit out raw SQL text directly?
             if not sql_query.strip() and explanation.strip().upper().startswith("SELECT "):
