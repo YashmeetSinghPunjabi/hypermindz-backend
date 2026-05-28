@@ -1,2 +1,4 @@
 .env
 *.sqlite
+__pycache__/
+*.db
