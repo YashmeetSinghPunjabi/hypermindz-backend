@@ -39,9 +39,17 @@ langchain.debug = True
 app = FastAPI(title="HyperMindZ Tabular NL-to-SQL Engine")
 
 # Configure relaxed CORS settings for Next.js app
+origins = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "https://hypermindz-frontend.vercel.app"
+]
+if os.getenv("FRONTEND_URL"):
+    origins.append(os.getenv("FRONTEND_URL"))
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
