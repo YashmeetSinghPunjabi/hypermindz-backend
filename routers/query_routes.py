@@ -15,6 +15,8 @@ from langchain_community.utilities import SQLDatabase
 from langchain_community.agent_toolkits import create_sql_agent
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
+import langchain
+langchain.debug = True
 
 router = APIRouter(
     prefix="/api",
